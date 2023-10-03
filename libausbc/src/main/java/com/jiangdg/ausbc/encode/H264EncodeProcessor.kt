@@ -176,7 +176,7 @@ class H264EncodeProcessor(
 
     companion object {
         private const val TAG = "H264EncodeProcessor"
-        private const val MIME = "video/avc"
+        private const val MIME = MediaFormat.MIMETYPE_VIDEO_MPEG4
         private const val FRAME_RATE = 30
         private const val KEY_FRAME_INTERVAL = 1
 

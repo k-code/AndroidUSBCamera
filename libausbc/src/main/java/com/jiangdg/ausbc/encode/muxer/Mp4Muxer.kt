@@ -85,7 +85,7 @@ class Mp4Muxer(
             }
             mOriginalPath = path
             path = "${path}.mp4"
-            mMediaMuxer = MediaMuxer(path!!, MediaMuxer.OutputFormat.MUXER_OUTPUT_MPEG_4)
+            mMediaMuxer = MediaMuxer(path!!, MediaMuxer.OutputFormat.MUXER_OUTPUT_HEIF)
         } catch (e: Exception) {
             mCaptureCallBack?.onError(e.localizedMessage)
             Logger.e(TAG, "init media muxer failed, err = ${e.localizedMessage}", e)
